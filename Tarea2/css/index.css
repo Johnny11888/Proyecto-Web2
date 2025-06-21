@@ -1,0 +1,206 @@
+
+.card-servicio {
+background-color: #f8f9fa; /* gris claro */
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+height: 100%;
+}
+
+.icono-circular {
+width: 100px;
+height: 100px;
+background-color: white;
+border-radius: 50%;
+margin: 0 auto 15px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icono-circular img {
+width: 50px;
+height: 50px;
+}
+
+
+
+.card-opcion {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.titulo-decorado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.titulo-decorado .linea {
+  height: 2px;
+  background-color: #0011ff; /* color linea */
+  width: 60px;
+}
+
+.icono-central {
+  font-size: 24px;
+  color: #ff7300; /* color del icono */
+}
+
+
+
+.icono-salud {
+    font-size: 50px;
+    color: #ff0000; /* color de los iconos */
+    margin-bottom: 15px;
+}
+
+.columna-postre {
+    padding: 20px;
+    color: white;
+}
+
+.cheesecake {
+    background-color: #398f12; /* color del cuadro */
+}
+.brownie {
+    background-color: #803726; /* color del cuadro */
+}
+.helado {
+    background-color: #f11a6d; /* color del cuadro */
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+/*reto6*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url("../imagenes/auroraboreal.png"); /* cambia esto según el nombre de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5); /* efecto de oscurecimiento */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner .btn {
+  margin: 0 10px;
+}
+
+
+.btn-aurora {
+  background-color: #28fd7a; /* color boton */
+  color: rgb(162, 0, 255);
+  border: none;
+}
+
+.btn-aurora:hover {
+  background-color: #613ffa;
+}
+
+.btn-outline-aurora {
+  background-color: transparent;
+  border: 2px solid #28fd7a;
+  color: #ffffff;
+}
+
+.btn-outline-aurora:hover {
+  background-color: #613ffa;
+  color: white;
+}
+
+/*reto 7*/
+
+.galeria {
+  padding: 50px 0;
+}
+
+.ih-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*reto8*/
+
+
+.r8-banner {
+  background-image: url('../imagenes/hotel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Cambiado: alinea vertical al centro */
+  justify-content: flex-start; /* Alinea horizontal a la izquierda */
+  padding-left: 80px;
+  padding-right: 80px;
+  color: white;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.r8-banner-content {
+  max-width: 700px;
+  text-align: left;
+  margin-top: -50px; /* Opcional: para mover un poco más arriba */
+}
+
+.r8-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.r8-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.r8-banner .btn {
+  margin: 0 10px;
+}
