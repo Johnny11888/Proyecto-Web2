@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Go Karts Johnny</title>
+  <!-- Favicon -->
+  <link href="imagenes/favicon.png" rel="icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="text-center p-3 text-white bg-rojo">
+    <h1 class="animate__animated animate__fadeInDown">🚥 ¡Viví la experiencia Go-Kart! 🚥</h1>
+  </header>
+
+  <!-- SECCIONES -->
+    <section id="seccion1" class="position-relative" style="height: 100vh; overflow: hidden;">
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+        <source src="video/banner.mp4" type="video/mp4">
+        
+    </video>
+
+    <!-- Capa oscura -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.3); z-index:1;"></div>
+
+    <!-- Contenido del banner -->
+    <div class="position-relative text-center text-white d-flex flex-column justify-content-center align-items-center h-100 z-2 wow animate__fadeIn">
+        <h2 class="display-4 fw-bold wow animate__animated animate__fadeInUp">¡Adrenalina sobre ruedas!</h2>
+        <p class="lead wow animate__animated animate__fadeInUp">Vení a vivir la emoción de los go-karts como nunca antes.</p>
+        <div class="mt-4 botones-landing">
+        <a href="#reservar" class="btn btn-rojo btn-lg mx-2 animate__animated animate__bounce animate__fast animate__infinite">🏎️ Reservar ahora</a>
+        <a href="#seccion5" class="btn btn-outline-rojo btn-lg mx-2 wow animate__animated animate__slideInLeft animate__delay-300ms">🔍 Ver más</a>
+        <a href="#seccion7" class="btn btn-rojo btn-lg mx-2 wow animate__animated animate__fadeIn animate__delay-1s">🏁 Suscribirme</a>
+        <a href="#galeria" class="btn btn-outline-rojo btn-lg mx-2 wow animate__animated animate__pulse animate__delay-600ms animate__delay-2s">📸 Ver galería</a>
+        </div>
+    </div>
+    </section>
+
+    <section id="seccion2" class="text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 wow animate__animated animate__fadeInUp">Escuchá nuestra pasión</h2>
+            <p class="mb-3 wow animate__animated animate__fadeInDown ">Dale clic al botón para transportarte a un ambiente full Go-Karts.</p>
+
+            <button id="btn-audio" class="btn btn-danger btn-lg animate__animated animate__pulse animate__infinite">
+            🔊 Reproducir Audio 🔊
+            </button>
+
+            <audio id="audio" src="audio/audio-promocional.mp3"></audio>
+        </div>
+    </section>
+
+      <section id="seccion3" class="py-5 text-white" style="background-color: #b40000;">
+        <div class="container text-center">
+          <h2 class="mb-4 wow animate__animated animate__fadeInUp">¿Por qué elegirnos?</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4 wow animate__animated animate__fadeInLeft">
+              <h5>Velocidad y emoción</h5>
+              <p>Contamos con una de las pistas más rápidas del país, ideal para quienes buscan adrenalina pura.</p>
+            </div>
+            <div class="col-md-4 mb-4 wow animate__animated animate__fadeInUp">
+              <h5>Seguridad garantizada</h5>
+              <p>Equipos revisados, cascos certificados y supervisión constante para que solo te preocupés por divertirte.</p>
+            </div>
+            <div class="col-md-4 mb-4 wow animate__animated animate__fadeInRight">
+              <h5>Ambiente familiar</h5>
+              <p>Ideal para celebrar cumpleaños, empresas o pasar una tarde inolvidable con amigos o familia.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="container my-5">
+        <h2 class="text-center mb-4 wow animate__animated animate__fadeInDown animate__delay-400ms">🏁 Galería de Experiencias</h2>
+        <div class="row g-4">
+
+          <!-- Imagen 1 -->
+          <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__zoomIn animate__delay-300ms">
+            <img src="imagenes/karts.jpg" alt="Karts" class="img-fluid rounded galeria-img">
+            <p class="galeria-caption mt-2">Lista de karts lista para la acción</p>
+          </div>
+
+          <!-- Imagen 2 -->
+          <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__zoomIn animate__delay-300ms">
+            <img src="imagenes/pista.jpg" alt="Vista aérea de la pista" class="img-fluid rounded galeria-img">
+            <p class="galeria-caption mt-2 ">Vista aérea del circuito</p>
+          </div>
+
+          <!-- Imagen 3 -->
+          <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__zoomIn animate__delay-300ms">
+            <img src="imagenes/pista2.jpg" alt="Pista indoor moderna" class="img-fluid rounded galeria-img">
+            <p class="galeria-caption mt-2">Pista indoor con múltiples niveles</p>
+          </div>
+
+          <!-- Imagen 4 -->
+          <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__zoomIn animate__delay-300ms">
+            <img src="imagenes/seguridad.jpg" alt="Instructor colocando casco" class="img-fluid rounded galeria-img">
+            <p class="galeria-caption mt-2">Instructores capacitados para tu seguridad</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="container text-center">
+          <h2 class="wow animate__animated animate__fadeInUp">Viví la emoción en pista</h2>
+          <p class="wow animate__animated animate__fadeInDown">Mirá cómo se vive la experiencia Go-Kart en nuestro circuito.</p>
+          <div class="video-container wow animate__animated animate__fadeInUp">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C1D__rrM2os?si=mMx0Cg1nkQncCYg7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion5" class="py-5 text-white" style="background-color: #b40000;">
+        <div class="container">
+          <h2 class="text-center mb-4 wow animate__animated animate__fadeInUp">Lo que dicen nuestros visitantes</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4 wow animate__animated animate__fadeInLeft">
+              <blockquote class="blockquote">
+                <p>“Una experiencia increíble. ¡Sentís la adrenalina desde el primer segundo!”</p>
+                <footer class="blockquote-footer text-white-50">Carlos M.</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6 mb-4 wow animate__animated animate__fadeInRight">
+              <blockquote class="blockquote">
+                <p>“Celebramos el cumple de mi hijo y fue espectacular. Personal muy atento y seguridad total.”</p>
+                <footer class="blockquote-footer text-white-50">Andrea G.</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seccion6" class="py-5 bg-metal">
+        <div class="container text-center">
+          <h2 class="mb-4 wow animate__animated animate__fadeInDown">Experiencia total sobre ruedas</h2>
+          <p class="mb-4 wow animate__animated animate__zoomInLeft">¡No solo es velocidad! Nuestro parque ofrece comida, zona infantil y eventos especiales cada fin de semana.</p>
+        </div>
+      </section>
+
+      <section id="experiencia" class="seccion-experiencia">
+      
+        <div class="carrusel">
+          <div class="carrusel-track">
+            <img src="imagenes/zonainfantil.jpg" alt="Zona Infantil" class="carrusel-img">
+            <img src="imagenes/cafe.jpg" alt="Café y postres" class="carrusel-img">
+            <img src="imagenes/envento.png" alt="Evento especial" class="carrusel-img">
+          </div>
+        </div>
+      </section>
+
+      <section id="reservar" class="parallax-cita">
+        <div class="contenido-cita">
+          <h2 class="mb-4 wow animate__animated animate__fadeInUp">¡Reservá tu próxima carrera! 🏁</h2>
+          <p class="mb-4 wow animate__animated animate__pulse animate__infinite">Podés reservar vía WhatsApp.</p>
+          <a href="https://wa.me/50686440780" target="_blank" class="btn btn-success btn-lg mx-2 wow animate__animated animate__bounce">
+            ⌯⌲ Click para Reservar
+          </a>
+        </div>
+      </section>
+
+      <section id="seccion7" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4 wow animate__animated animate__fadeInUp">Suscribite a nuestras novedades 📨</h2>
+          <p class="text-center mb-5 wow animate__animated animate__fadeInDown">Recibí promociones, descuentos y noticias de eventos especiales directamente en tu correo.</p>
+
+          <form class="mx-auto" style="max-width: 500px;">
+            <div class="mb-3 wow animate__animated animate__fadeInLeft">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="mb-4 wow animate__animated animate__fadeInRight">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="correo@email.com">
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-rojo btn-lg wow animate__animated animate__pulse animate__infinite">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <section id="seccion8" class="py-5">
+        <div class="container text-center mb-4">
+          <h2 class="wow animate__animated animate__fadeInUp">Ubicación del circuito 🗺️</h2>
+          <p class="wow animate__animated animate__fadeInLeft"> Nos encontramos en un punto estratégico para que vengás a correr con facilidad.</p>
+        </div>
+        
+        <div class="map-responsive wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.077906846478!2d-84.19808778472708!3d9.961348496851498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f942820a6bd1%3A0xa93059c8765a486d!2sFonseca%20Indoor%20Karting%20FIK!5e0!3m2!1ses!2scr!4v1751508221016!5m2!1ses!2scr" 
+            frameborder="0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+      </section>
+
+
+      <a href="https://wa.me/50686440780" 
+        class="whatsapp-float" 
+        target="_blank" 
+        title="¿Tienes dudas? Escribinos por WhatsApp">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp" width="30" height="30">
+      </a>
+
+    <section class="info-final py-5 text-white">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">📍 Contáctanos</h5>
+            <p>📱 WhatsApp: <a href="https://wa.me/50686440780" class="link-light">+506 8644-0780</a></p>
+            <p>📞 Teléfono: +506 2264-3432</p>
+            <p>✉️ Correo: info@kartsfelices.com</p>
+            <p>📌 Ubicación: Lindora, San José, Costa Rica</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">🎉 Servicios</h5>
+            <ul class="list-unstyled">
+              <li>🎂 Eventos infantiles</li>
+              <li>🍕 Snack Bar</li>
+              <li>🏁 Competencias amistosas</li>
+              <li>🏎️ Alquiler de pistas</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">⏰ Horario</h5>
+            <p class="mb-1">🟢 ¡Abierto todos los días!</p>
+            <ul class="list-unstyled">
+              <li>Lunes a Jueves: 11:00am - 9:00pm</li>
+              <li>Viernes: 11:00am - 10:00pm</li>
+              <li>Sábados: 10:00am - 10:00pm</li>
+              <li>Domingos: 10:00am - 9:00pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-white bg-dark p-3 mt-5">
+    <p>© 2025 Universidad Cenfotec - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón ScrollTop -->
+  <a href="#" class="btn btn-danger position-fixed bottom-0 end-0 m-4" id="btn-scrolltop">↑</a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+
+    // ScrollTop
+    const btn = document.getElementById('btn-scrolltop');
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+  <script>
+  document.getElementById('btn-audio').addEventListener('click', () => {
+    const audio = document.getElementById('audio');
+    audio.play();
+  });
+</script>
+</body>
+</html>
